@@ -50,7 +50,7 @@ test('sause Demo Test Cases-with steps',{tag:['@sausedemo','@regression','@login
         console.log("product added in to cart and clicked checkout");
     });
     await test.step('step 6-Fill form',async()=>{
-        await formFill.fillForm('Monali','Sutar','411046');
+        await formFill.fillForm('Srinivas','Samena','411046');
         await new Promise(resolve => setTimeout(resolve, 3000));
         console.log("All fields added in form");
     });
