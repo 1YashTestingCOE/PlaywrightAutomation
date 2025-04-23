@@ -1,0 +1,13 @@
+{
+    "url":"https://trainee-web-app.azurewebsites.net/auth/login",
+    "username":"test@test.com",
+    "password":"test",
+    "welcomeTitle":"Welcome to",
+    "dealDetailsTitle":"Deal Detail Form",
+    "deal": {
+        "dealAddress" : "5 Park Avenue ,New York",
+        "dealNumber" : "99999",
+        "dealOpeningDate":"12-12-2024",
+        "dealClosingDate":"12-12-2025"
+     }
+}
