@@ -15,14 +15,10 @@ export class BrowserControl
         try{
             if(browserName=="chromium"){
                 this.browser = await chromium.launch({
-                    headless: false,
+                    headless: true,
                 });
             }
-            else if(browserName=="firefox"){
-                this.browser = await firefox.launch({
-                    headless: false,
-                });
-            }
+            
             return this.browser;
         }
         catch(ex){
