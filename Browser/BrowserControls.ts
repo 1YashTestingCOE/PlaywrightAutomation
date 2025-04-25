@@ -15,7 +15,7 @@ export class BrowserControl
         try{
             if(browserName=="chromium"){
                 this.browser = await chromium.launch({
-                    headless: true,
+                    headless: false,
                 });
             }
             
@@ -38,6 +38,8 @@ export class BrowserControl
             throw new Error('Page tab not opened');
         }
     }
+    
+    
 
     async embedScreenshot(msg:string, page:Page):Promise<void>{
         const screenshot = await page.screenshot();
