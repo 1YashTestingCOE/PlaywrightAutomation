@@ -15,7 +15,7 @@ export class BrowserControl
         try{
             if(browserName=="chromium"){
                 this.browser = await chromium.launch({
-                    headless: false,
+                    headless: true,
                 });
             }
             
